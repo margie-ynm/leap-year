@@ -16,6 +16,19 @@ $(document).ready(function() {
     event.preventDefault();
     var yearInput = parseInt($("#leap-year").val());
     var result = calculator(yearInput);
-    $("#result p").text(result);
+    //$("#result p").text(result);
+
+    $(".year").text(yearInput);
+
+
+    if (!result) {
+      $(".not").text("not");
+
+    } else {
+      $(".not").text("");
+    }
+
+
+    $("#result").show();
   });
 });
