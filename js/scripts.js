@@ -1,6 +1,6 @@
 //business logic
 var calculator = function(squirrel) {
-  if ((squirrel % 4 === 0) && (squirrel % 100 !== 0))  {
+  if ((squirrel % 4 === 0) && (squirrel % 100 !== 0) || (squirrel % 400 === 0))  {
     return true;
   } else {
     return false;
